@@ -21,6 +21,8 @@ class LoginController extends Controller
             'email' => 'Identity information is incorrect'
         ]);
     }
-
-
+    public function logout(){
+        Auth::logout();
+    }
+    
 }
